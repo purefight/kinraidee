@@ -1,0 +1,118 @@
+/* bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    .topnav a:hover {
+    background-color: #393E46;
+    color: f2f2f2;
+    }
+
+    .topnav a.active {
+    background-color: #6D9886;
+    color: rgb(255, 255, 255);
+    }
+/* bar */
+
+/* text center */
+
+.row {
+    text-align: center;
+    font-family: Inter,sans-serif;
+    font-size: 25px;
+}
+/* text center*/
+
+/* Background */
+body {
+    background: linear-gradient(-45deg, #6D9886, #F2E7D5, #F7F7F7, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Background */
+
+/* Button Click your meal 🍗 */
+
+.btn-primary {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-primary:after { /* Call after put the mouse*/
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.btn-primary:hover:after {
+  transform: translate(0, 0);
+}
+
+.btn-primary:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.btn-primary:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    padding: 0 40px;
+  }
+}
+/* Button Click your meal 🍗 */
+
+
+

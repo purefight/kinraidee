@@ -1,0 +1,56 @@
+<!--เว็บไซต์สามารถรันได้ (และต้องมี note วิธีการรัน) 
+ใช้ firebase ในการรัน webapp
+
+link of web Kinraidee
+https://kinraidee-1a340.web.app/
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinRaiDee</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="food.js"></script>
+</head>
+<body>
+    <!-- create bar -->
+    <div class="topnav"> 
+        <a class="active">KinRaiDee</a>
+        <a href="all_menu.html" >All menu</a>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- string -->
+            <h2>KinRaiDee?</h2>
+            <h4>Get a random meal by clicking below.</h4>
+            
+            <!-- create  button
+            
+            <button class="btn-primary" id="get_meal">
+               Click your meal 🍗 
+            </button>
+        --> 
+            
+            <button class="btn-primary" onclick="GetValue();">Click your meal 🍗</button>
+            <p id="message" ></p>
+            <span id="result" > </span>   
+
+        </div>
+
+        <div id="message">
+
+        </div>
+    </div>
+
+    
+
+    
+
+</body>
+</html>
