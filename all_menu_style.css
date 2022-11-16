@@ -14,7 +14,7 @@
     }
     .topnav a:hover {
     background-color: #393E46;
-    color: f2f2f2;
+    color: #f2f2f2;
     }
 
     .topnav a.active {
@@ -114,3 +114,25 @@ body {
   }
 
 /* Buttonsec */
+
+
+
+/* btn file */
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file]::file-selector-button {
+    margin-right: 10px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+/* btn file */
+

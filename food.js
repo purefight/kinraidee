@@ -90,7 +90,7 @@ function GetValue() {
     randomImage[14] = "https://cms.dmpcdn.com/food/2022/06/10/f99c0260-e8ad-11ec-aae3-7b8340e29fcf_original.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"; //ข้าวผัดต้มยำ
     randomImage[15] = "https://cms.dmpcdn.com/food/2022/06/10/fb949e10-e8ad-11ec-9052-410227a56ee0_original.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500";//สปาเกตตี้ผัดขี้เมา
 
-    return document.getElementById("result").innerHTML = '<img src="'+randomImage[number]+'" style="width:100%"/>';  
+    return document.getElementById("result").innerHTML = '<img src="'+randomImage[number]+'" style="width:75%"/>';  
     
 }
 
@@ -114,7 +114,7 @@ function allMeal() {
     randomImage[15] = "https://cms.dmpcdn.com/food/2022/06/10/fb949e10-e8ad-11ec-9052-410227a56ee0_original.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500";//สปาเกตตี้ผัดขี้เมา
     for(let i = 0; i < breakfastlist.length; i++) {
         var namemeal = breakfastlist[i];
-        document.getElementById("allMeal").innerHTML += (i+1) +"."+namemeal.mealName + "<br>" + '<img src="'+randomImage[i]+'" style="width:100%"/>'+ "<br>";
+        document.getElementById("allMeal").innerHTML += (i+1) + "." +namemeal.mealName + "<br>" + '<img src="'+randomImage[i]+'" style="width:75%"/>' + "<br>" + "<br>";
 
     }
     
