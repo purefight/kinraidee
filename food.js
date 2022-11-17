@@ -78,6 +78,11 @@ let breakfastlist = [{
     mealName: 'สปาเกตตี้ผัดขี้เมา',
     img :"https://cms.dmpcdn.com/food/2022/06/10/fb949e10-e8ad-11ec-9052-410227a56ee0_original.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 },
+{
+    idMeal: 17,
+    mealName: 'สปาเกตตี้ผัดขี้เมา',
+    img :"https://cms.dmpcdn.com/food/2022/06/10/fb949e10-e8ad-11ec-9052-410227a56ee0_original.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+},
 
 
 ];
@@ -94,5 +99,19 @@ function allMeal() {
         //document.getElementById("allMeal").innerHTML += (i+1) + "." +namemeal.mealName + "<br>" + '<img src="'+randomImage[i]+'" style="width:75%"/>' + "<br>" + "<br>";
         document.getElementById("allMeal").innerHTML +=  meal.idMeal+"."+meal.mealName +"<br>"+"<br>"+'<img src="'+meal.img+'" style="width:75%"/>'+"<br>"+"<br>";
     }
-    
 }
+
+function submit() {
+    document.getElementById("m1").innerHTML = document.querySelector('#getName').value;
+    document.getElementById("m2").innerHTML = document.querySelector('#getImage').value;
+    imgUpload = document.querySelector('#getImage').value;
+    document.getElementById("m2").innerHTML = '<img src="'+imgUpload+'" style="width:75%"/>'
+}
+
+
+
+//call firebase
+    // db.collection('food').get().then(food =>{
+    //     console.log(food);
+
+    // });
